@@ -6,8 +6,15 @@ import Home from './components/Home'
 import Auth from './components/Auth'
 import Form from './components/Form'
 import Profile from './components/Profile'
+import { useContext } from 'react'
+import AuthContext from './store/authContext'
+
+
 
 const App = () => {
+
+  const authCtx = useContext(AuthContext)
+  
   return (
     <div className='app'>
       <Header/>
